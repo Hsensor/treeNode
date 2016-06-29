@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="./css/default.css">
+	<script type="text/javascript" src="./jquery/dist/jquery.js"></script>
+	<style>
+		ul{
+			margin:0;
+			padding:0;
+			list-style: none;
+		}
+		.row-wrap{
+			display: table;
+			table-layout: fixed;
+			width: 100%;
+		}
+		.row-wrap>div{
+			display: table-cell;
+			width: auto;
+		}
+		.row-wrap .button{
+			line-height: 0;
+		    margin: 0;
+		    width: 16px;
+		    height: 16px;
+		    display: inline-block;
+		    vertical-align: middle;
+		    border: 0 none;
+		    cursor: pointer;
+		    outline: none;
+		    background-color: transparent;
+		    background-repeat: no-repeat;
+		    background-attachment: scroll;
+		    background-image: url("./image/zTreeStandard.png");
+		}
+		.row-wrap .button{
+			width: 18px;
+			height: 18px;
+		}
+		.row-wrap .button.root_close{
+			background-position: -74px 0;
+		}
+		.row-wrap .button.center_open{
+			background-position: -92px -18px;
+		}
+		.row-wrap .button.bottom_close{
+			background-position: -74px -36px;
+		}
+		.row-wrap .button.roots_docu{
+			background-position: -56px 0;
+		}
+		.row-wrap .button.center_docu{
+			background-position: -56px -18px;
+		}
+		.row-wrap .button.bottom_docu{
+			background-position: -56px -36px;
+		}
+		.node-tree ul.line{
+		    background: url(./image/line_conn.gif) 0 0 repeat-y;
+		}
+	</style>
+</head>
+<body>
+	<ul class="node-tree">
+		<li class="row">
+			<div class="row-wrap">
+				<div><span class="roots_docu button"></span>Node1</div>
+				<div>Online</div>
+				<div></div>
+				<div></div>
+			</div>
+			<ul class="line">
+				<li class="row">
+					<div class="row-wrap">
+						<div style="padding-left:15px;"><span class="center_docu button"></span>355c2e404b45e245</div>
+						<div>Online</div>
+						<div>SSD</div>
+						<div>745.21GB</div>
+					</div>
+				</li>
+				<li class="row">
+					<div class="row-wrap">
+						<div style="padding-left:15px;"><span class="bottom_docu button"></span>355c2e404b45e245</div>
+						<div>Online</div>
+						<div>SSD</div>
+						<div>745.21GB</div>
+					</div>
+				</li>
+			</ul>
+		</li>
+		<li class="row">
+			<div class="row-wrap">
+				<div><span class="center_docu button"></span>Node1</div>
+				<div>Online</div>
+				<div></div>
+				<div></div>
+			</div>
+			<ul class="line">
+				<li class="row">
+					<div class="row-wrap">
+						<div style="padding-left:15px;"><span class="center_docu button"></span>355c2e404b45e245</div>
+						<div>Online</div>
+						<div>SSD</div>
+						<div>745.21GB</div>
+					</div>
+				</li>
+				<li class="row">
+					<div class="row-wrap">
+						<div style="padding-left:15px;"><span class="bottom_docu button"></span>355c2e404b45e245</div>
+						<div>Online</div>
+						<div>SSD</div>
+						<div>745.21GB</div>
+					</div>
+				</li>
+			</ul>
+		</li>
+		<li class="row">
+			<div class="row-wrap">
+				<div><span class="bottom_docu button"></span>Node1</div>
+				<div>Online</div>
+				<div></div>
+				<div></div>
+			</div>
+			<ul>
+				<li class="row">
+					<div class="row-wrap">
+						<div style="padding-left:15px;"><span class="center_docu button"></span>355c2e404b45e245</div>
+						<div>Online</div>
+						<div>SSD</div>
+						<div>745.21GB</div>
+					</div>
+				</li>
+				<li class="row">
+					<div class="row-wrap">
+						<div style="padding-left:15px;"> <span class="bottom_docu button"></span> 355c2e404b45e245</div>
+						<div>Online</div>
+						<div>SSD</div>
+						<div>745.21GB</div>
+					</div>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</body>
+</html>
